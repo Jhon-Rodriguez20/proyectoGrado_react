@@ -1,0 +1,90 @@
+.mi-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjeta {
+  box-shadow: 0 0 10px rgb(187, 187, 187);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.tarjeta:hover {
+  transition: .3s;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(59, 16, 16, 0.4);
+  transform: translateY(-4%);
+}
+
+.formularioOculto {
+  display: none;
+}
+
+.nombreNav {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Footer {
+  padding: 2rem 0;
+  margin-top: 15rem;
+  background: #86001b;
+}
+
+.ft-1 p {
+  text-align: justify;
+  color: #fff;
+}
+
+.icono {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: #ffffff;
+}
+
+.icono:hover {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #ffffff;
+  transition: .3s;
+  overflow: hidden;
+  transform: translateY(-10%);
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+}
+
+.ft-2 ul a:hover {
+  color: red;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.tarjeta {
+
+  view-timeline-name: --mitarjeta;
+  view-timeline-axis: block;
+
+  animation-timeline: --mitarjeta;
+  animation-name: show;
+
+  animation-range: entry 25% cover 45%;
+  animation-fill-mode: both;
+}
